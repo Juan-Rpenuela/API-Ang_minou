@@ -56,9 +56,9 @@ RouterUsers.get('/login/:email/:username/:bio', (req, res) => {
     res.send(JSON.stringify(results));
 });
 
-RouterUsers.post('/:email', (req, res) => {
+RouterUsers.post('/', (req, res) => {
     let newUser = req.body;
-    users.push = newUser;
+    users.push(newUser);
     res.send(JSON.stringify(users));
 }
 );
